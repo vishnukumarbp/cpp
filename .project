@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>cpp</name>
+	<comment></comment>
+	<projects>
+		<project>26 alphabets</project>
+		<project>Classes</project>
+		<project>First cpp</project>
+		<project>Pointers</project>
+	</projects>
+	<buildSpec>
+	</buildSpec>
+	<natures>
+	</natures>
+</projectDescription>
