@@ -1,9 +1,3 @@
-/*
- * Swarm.h
- *
- *  Created on: 13 Sep 2014
- *      Author: johnwpurcell
- */
 
 #ifndef SWARM_H_
 #define SWARM_H_
@@ -14,7 +8,7 @@ namespace localnp {
 
 class Swarm {
 public:
-	const static int NPARTICLES = 5000;
+	const static int NPARTICLES = 1000;
 
 private:
 	Particle * m_pParticles;
@@ -22,6 +16,7 @@ private:
 public:
 	Swarm();
 	virtual ~Swarm();
+	void update();
 
 	const Particle * const getParticles() { return m_pParticles; };
 };

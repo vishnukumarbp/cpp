@@ -55,8 +55,18 @@ bool Screen::init() {
 
 }
 
+
+void Screen::clear() {
+	memset(m_buffer, 0, MAX_PIXEL * sizeof(Uint32));
+}
+
 void Screen::setPixel(int x, int y, unsigned char red, unsigned char green,
 		unsigned char blue) {
+
+	if(x < 0 || x >= SCREEN_WIDTH || y < 0 || y >= SCREEN_HEIGHT) {
+			return;
+		}
+
 	Uint32 color = 0;
 
 	color += red;

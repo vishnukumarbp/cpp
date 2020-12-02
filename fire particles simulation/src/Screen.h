@@ -31,6 +31,7 @@ public:
 			unsigned char blue);
 	void update();
 	bool processEvents();
+	void clear();
 	void close();
 };
 
